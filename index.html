@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MC PORTFÓLIO</title>
+  <link rel="icon" type="image/png" href="LOGO">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+ 
+  <div id="particles-container" class="particles-container" aria-hidden="true"></div>
+  
+ 
+  <div id="mouse-light" aria-hidden="true"></div>
+
+  <header class="site-header">
+  
+    <div class="mobile-menu-toggle">
+      <i class="fas fa-ellipsis-v"></i>
+    </div>
+    
+   
+    <div class="logo">
+      <img src="img/LOGOMC.png" alt="Logo MC" class="logo-img">
+    </div>
+    
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#sobre">SOBRE</a></li>
+        <li><a href="#projetos">PROJETOS</a></li>
+        <li><a href="#habilidades">HABILIDADES</a></li>
+        <li><a href="#idiomas">IDIOMAS</a></li>
+        <li><a href="#certificados">CERTIFICADOS</a></li>
+        <li><a href="#contato">CONTATO</a></li>
+      </ul>
+    </nav>
+    
+    
+    <div class="theme-toggle" title="Alternar tema claro/escuro">
+      <img src="img/TEMA.png" alt="Ícone de tema" class="theme-icon">
+    </div>
+    
+
+    <div class="mobile-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <img src="img/LOGOMC.png" alt="Logo MC" class="sidebar-logo-img">
+        </div>
+        <button class="close-sidebar"><i class="fas fa-times"></i></button>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#sobre">SOBRE</a></li>
+          <li><a href="#projetos">PROJETOS</a></li>
+          <li><a href="#habilidades">HABILIDADES</a></li>
+          <li><a href="#idiomas">IDIOMAS</a></li>
+          <li><a href="#certificados">CERTIFICADOS</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    
+    <div class="sidebar-overlay"></div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <div class="hero-text-box">
+          <h1 id="hero-heading">MATHEUS CIRILO</h1>
+          <p class="subheading">Engenheiro de Software</p>
+        </div>
+        <p class="skills-summary">
+          FullStack | ArqSis | DevOps | TesteAuto | DB | EDA | CI/CD | Git |
+          Scrum/Kanban | Cloud (AWS/Azure) | Segurança (SecOps)
+        </p>
+        <a href="#sobre" class="cta-button">VAMOS NOS CONHECER MELHOR?</a>
+      </div>
+      <div class="dots-indicator dots-hero" aria-hidden="true">
+        <span class="dot"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <section id="sobre" class="about-section content-section" aria-labelledby="about-heading">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 id="about-heading">OLÁ,</h2>
+          <h3>Me chamo Matheus Cirilo de Almeida</h3>
+          <p class="role-title">Engenheiro de Software</p>
+          <p>Sou um jovem de 17 anos apaixonado por tecnologia, infelizmente ainda não possuo nenhuma experiência
+            comprovada na área de mercado, mas tenho habilidades e capacidade. Sou desenvolvedor FullStack com
+            experiência em Arquitetura de Sistemas, DevOps, Testes Automatizados e Banco de Dados. Trabalho com
+            CI/CD, Git e metodologias ágeis (Scrum/Kanban), sempre focando na entrega rápida e de qualidade. Tenho
+            experiência em Cloud (AWS/Azure) e boas práticas de Segurança (SecOps), buscando soluções seguras e
+            escaláveis</p>
+        </div>
+        <div class="about-image">
+          <img src="img/Perfil.jpg" alt="Foto de Matheus Cirilo de Almeida" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="projects-section content-section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-title">CONFIRA MEUS PROJETOS</h2>
+      <div class="dots-indicator dots-projects" aria-hidden="true">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot active"></span>
+      </div>
+      <div class="projects-grid">
+        <a href="Projeto/Projeto1.html" class="project-card">
+          <img src="img/PJ01.jpg" alt="Pré-visualização do Projeto 1" />
+          <p>Sistema de Orçamento de Gravação Prefeitura</p>
+        </a>
+        <a href="Projeto/Projeto2.html" class="project-card">
+          <img src="img/MyDrugs.PNG" alt="Pré-visualização do Projeto 2" />
+          <p>MyDrugs</p>
+        </a>
+        <a href="projetos/projeto3.html" class="project-card">
+          <img src="img/project-placeholder.jpg" alt="Pré-visualização do Projeto 3" />
+          <p>Projeto 3</p>
+        </a>
+        <a href="Projeto/Projeto4.html" class="project-card">
+          <img src="img/PJ04.PNG" alt="Pré-visualização do Projeto 4" />
+          <p>Sistema de solicitações de serviços Rurais Prefeitura</p>
+        </a>
+        <a href="projetos/projeto5.html" class="project-card">
+          <img src="img/project-placeholder.jpg" alt="Pré-visualização do Projeto 5" />
+          <p>Projeto 5</p>
+        </a>
+        <a href="projetos/projeto6.html" class="project-card">
+          <img src="img/project-placeholder.jpg" alt="Pré-visualização do Projeto 6" />
+          <p>Projeto 6</p>
+        </a>
+      </div>      
+    </section>
+
+    <section id="habilidades" class="skills-section content-section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-title">HABILIDADES</h2>
+      <div class="skills-grid">
+        <div class="skill-icon"><img src="img/MySQL.png" alt="Logotipo do MySQL" /></div>
+        <div class="skill-icon"><img src="img/JS.png" alt="Logotipo do JavaScript" /></div>
+        <div class="skill-icon"><img src="img/HTML.png" alt="Logotipo do HTML5" /></div>
+        <div class="skill-icon"><img src="img/Firebase.png" alt="Logotipo do Firebase" /></div>
+        <div class="skill-icon"><img src="img/Excel.png" alt="Logotipo do Excel" /></div>
+        <div class="skill-icon"><img src="img/Java.webp" alt="Logotipo do Java" /></div>
+        <div class="skill-icon"><img src="img/Phyton.png" alt="Logotipo do Python" /></div>
+        <div class="skill-icon"><img src="img/CSS.png" alt="Logotipo do CSS" /></div>
+        <div class="skill-icon"><img src="img/GIT.png" alt="Logotipo do Git" /></div>
+        <div class="skill-icon"><img src="img/DATABASE.webp" alt="Ícone de Banco de Dados" /></div>
+        <div class="skill-icon"><img src="img/WEBDESIGN.png" alt="Ícone de Web Design" /></div>
+        <div class="skill-icon"><img src="img/SEGURANÇA.webp" alt="Ícone de Segurança" /></div>
+        <div class="skill-icon"><img src="img/DEVOPS.png" alt="Ícone de DevOps" /></div>
+        <div class="skill-icon"><img src="img/CLOUD.png" alt="Ícone de Cloud Computing" /></div>
+        <div class="skill-icon"><img src="img/POWERBI.png" alt="Logotipo do Power BI" /></div>
+      </div>
+    </section>
+
+    <section id="idiomas" class="languages-section content-section" aria-labelledby="languages-heading">
+      <h2 id="languages-heading" class="section-title">IDIOMAS</h2>
+      <div class="languages-container">
+        <div class="language-item">
+          <div class="language-name">
+            <h3>Português</h3>
+            <p>Nativo</p>
+          </div>
+          <div class="language-level">
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="language-item">
+          <div class="language-name">
+            <h3>Inglês</h3>
+            <p>Intermediário</p>
+          </div>
+          <div class="language-level">
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="language-item">
+          <div class="language-name">
+            <h3>Espanhol</h3>
+            <p>Intermediário Avançado</p>
+          </div>
+          <div class="language-level">
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificados" class="certificates-section content-section" aria-labelledby="certificates-heading">
+      <h2 id="certificates-heading" class="section-title">CERTIFICADOS</h2>
+      <div class="certificates-content">
+        <p>(Certificados serão adicionados em breve)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato" class="site-footer-bottom">
+    <div class="footer-column">
+      <h4>NAVEGAÇÃO:</h4>
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#idiomas">Idiomas</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-column">
+      <h4>CONTATO:</h4>
+      <p><i class="fas fa-phone"></i> <strong>TELEFONE:</strong> <a href="tel:+5543996825923">+55 (43)
+          99682-5923</a></p>
+      <p><i class="fas fa-envelope"></i> <strong>EMAIL:</strong> <a
+          href="mailto:Matheuscirilodealmeida@gmail.com">Matheuscirilodealmeida@gmail.com</a></p>
+    </div>
+    <div class="footer-column">
+      <h4>SOCIAL:</h4>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/matheus-cirilo-de-almeida-979190331/" target="_blank" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Theuscirilo" target="_blank" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/theusscirilo_/" target="_blank" aria-label="Instagram"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/TheusLifeDigital" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+<div id="tsparticles"></div>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.42.4/tsparticles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+
+  <script>
+     VanillaTilt.init(document.querySelector(".about-image img"), {
+    max: 8,             
+    speed: 600,        
+    scale: 1.04,         
+    perspective: 1000,   
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+    glare: false,        
+    "max-glare": 0.0,    
+    transition: true,
+    reset: true          
+  });
+    
+    const isMobile = window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.tsParticles) {
+        tsParticles.load("particles-container", {
+          particles: {
+            number: { value: 60 },
+            color: { value: "#a950ff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5 },
+            size: { value: 3, random: true },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#a950ff",
+              opacity: 0.4,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 1.5,
+              direction: "none",
+              out_mode: "out"
+            }
+          },
+          interactivity: {
+            detect_on: "window",
+            events: {
+              onhover: { enable: true, mode: "repulse" },
+              onclick: { enable: true, mode: "push" }
+            },
+            modes: {
+              repulse: { distance: 100 },
+              push: { particles_nb: 4 }
+            }
+          },
+          retina_detect: true
+        });
+      }
+
+      const mouseLight = document.getElementById('mouse-light');
+      if (!window.matchMedia("(pointer: coarse)").matches) {
+        document.body.style.cursor = 'none';
+        document.addEventListener('mousemove', e => {
+          mouseLight.style.left = `${e.clientX}px`;
+          mouseLight.style.top = `${e.clientY}px`;
+        });
+      } else {
+        mouseLight.style.display = 'none';
+      }
+    });
+        document.body.style.cursor = 'auto';
+      
+      
+      function checkScroll() {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        const titles = document.querySelectorAll('.section-title');
+        
+       
+        titles.forEach(title => {
+          const position = title.getBoundingClientRect().top;
+          if (position < window.innerHeight * 0.9) {
+            title.classList.add('appear');
+          }
+        });
+        
+        
+        elements.forEach(element => {
+          const position = element.getBoundingClientRect().top;
+          if (position < window.innerHeight * 0.9) {
+            element.classList.add('appear');
+          }
+        });
+      }
+      
+      
+      const sections = [
+        '.about-content', '.projects-grid', '.skills-grid', 
+        '.languages-container', '.certificates-content'
+      ];
+      
+      sections.forEach(selector => {
+        const container = document.querySelector(selector);
+        if (container) {
+          const elements = container.children;
+          Array.from(elements).forEach((el, index) => {
+            el.classList.add('animate-on-scroll');
+            el.style.transitionDelay = (index * 0.1) + 's';
+          });
+        }
+      });
+      
+      
+      setTimeout(checkScroll, 100);
+      window.addEventListener('scroll', checkScroll);
+      
+      
+      const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+      const mobileSidebar = document.querySelector('.mobile-sidebar');
+      const sidebarOverlay = document.querySelector('.sidebar-overlay');
+      const closeSidebar = document.querySelector('.close-sidebar');
+      const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+      
+      
+      function openSidebar() {
+        mobileSidebar.classList.add('active');
+        sidebarOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; 
+      }
+      
+     
+      function closeSidebarMenu() {
+        mobileSidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      
+     
+      if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', openSidebar);
+      }
+      if (closeSidebar) {
+        closeSidebar.addEventListener('click', closeSidebarMenu);
+      }
+      if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', closeSidebarMenu);
+      }
+      
+     
+      sidebarLinks.forEach(link => {
+        link.addEventListener('click', closeSidebarMenu);
+      });
+
+    window.addEventListener('resize', () => {
+      const newIsMobile = window.innerWidth <= 768;
+      
+
+      if (newIsMobile !== isMobile) {
+        location.reload();
+      }
+    });
+
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto 2 - Matheus Cirilo</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-content {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .project-content p,
+    .project-content h1,
+    .project-content h2,
+    .project-content h3 {
+      text-align: justify;
+    }
+    .project-content ul {
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    .project-content li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-container" class="particles-container" aria-hidden="true"></div>
+  <div id="mouse-light" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="logo">
+      <img src="../img/LOGOMC.png" alt="Logo MC" class="logo-img" />
+    </div>
+    <div class="theme-toggle">
+      <img src="../img/TEMA.png" alt="Ícone de tema" class="theme-icon" />
+    </div>
+  </header>
+
+  <main class="content-section">
+    <h1 class="section-title appear">Projeto 2</h1>
+
+    <div class="project-content">
+      <img src="../img/PJ04.PNG" alt="Imagem do Projeto 2" style="max-width: 100%; border-radius: 10px; margin-bottom: 30px;" />
+
+      <h1>📣 Sistema de Atendimento Urbano – Prefeitura Municipal de Rosário do Ivaí</h1>
+
+      <p>
+        Este projeto foi desenvolvido com <strong>Streamlit</strong> com o objetivo de facilitar a comunicação entre os cidadãos e a Prefeitura Municipal de Rosário do Ivaí. A plataforma permite que moradores relatem problemas urbanos, façam solicitações de serviço ou enviem sugestões diretamente à equipe administrativa. O sistema é simples, responsivo e totalmente digital, promovendo mais agilidade e transparência no atendimento público.
+      </p>
+
+      <h2>🔧 Funcionalidades Principais:</h2>
+
+      <h3>📝 Formulário de Solicitação Cidadã:</h3>
+      <ul>
+        <li>Envio de pedidos com nome, contato, localidade, endereço e descrição do problema.</li>
+        <li>Opções para tipos de problema: buracos, iluminação, entulho, árvores e outros.</li>
+        <li>Armazenamento em tempo real usando <code>session_state</code>.</li>
+      </ul>
+
+      <h3>🔐 Área Administrativa:</h3>
+      <ul>
+        <li>Acesso restrito por senha para a equipe da Prefeitura.</li>
+        <li>Visualização de pedidos em tabela interativa.</li>
+        <li>Exportação para arquivo CSV.</li>
+        <li>Logout seguro da sessão administrativa.</li>
+      </ul>
+
+      <h3>🧠 Persistência Temporária com <code>st.session_state</code>:</h3>
+      <ul>
+        <li>Gerenciamento dos dados do usuário enquanto a aplicação estiver ativa.</li>
+        <li>Não utiliza banco de dados externo — ideal para protótipos.</li>
+      </ul>
+
+      <h3>🎨 Interface Intuitiva e Acessível:</h3>
+      <ul>
+        <li>Layout amigável com separação entre área pública e área administrativa.</li>
+        <li>Totalmente responsivo, com mensagens claras e intuitivas.</li>
+      </ul>
+
+      <h2>🛠 Tecnologias Utilizadas:</h2>
+      <ul>
+        <li><strong>Linguagem:</strong> Python</li>
+        <li><strong>Framework:</strong> Streamlit</li>
+        <li><strong>Bibliotecas:</strong> pandas, datetime, streamlit</li>
+      </ul>
+
+      <h2>💡 Objetivo:</h2>
+      <p>
+        Digitalizar o canal de atendimento urbano da Prefeitura, oferecendo uma solução prática para que os moradores comuniquem problemas e colaborem com a gestão pública. O sistema reduz burocracias, agiliza a triagem de demandas e fortalece o vínculo entre administração e população.
+      </p>
+
+      <a href="../index.html#projetos" class="cta-button">Voltar para o Portfólio</a>
+      <a href="https://github.com/Theuscirilo/Solicitacao_de_Servicos_Urbanos" class="cta-button" target="_blank">Acessar Projeto</a>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.42.4/tsparticles.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.tsParticles) {
+        tsParticles.load("particles-container", {
+          particles: {
+            number: { value: 60 },
+            color: { value: "#a950ff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5 },
+            size: { value: 3, random: true },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#a950ff",
+              opacity: 0.4,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 1.5,
+              direction: "none",
+              out_mode: "out"
+            }
+          },
+          interactivity: {
+            detect_on: "window",
+            events: {
+              onhover: { enable: true, mode: "repulse" },
+              onclick: { enable: true, mode: "push" }
+            },
+            modes: {
+              repulse: { distance: 100 },
+              push: { particles_nb: 4 }
+            }
+          },
+          retina_detect: true
+        });
+      }
+
+      const mouseLight = document.getElementById('mouse-light');
+      if (!window.matchMedia("(pointer: coarse)").matches) {
+        document.body.style.cursor = 'none';
+        document.addEventListener('mousemove', e => {
+          mouseLight.style.left = `${e.clientX}px`;
+          mouseLight.style.top = `${e.clientY}px`;
+        });
+      } else {
+        mouseLight.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
