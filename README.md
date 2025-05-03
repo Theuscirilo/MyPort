@@ -2,6 +2,8 @@
 
 Bem-vindo ao meu portfólio profissional! Este repositório apresenta meus principais projetos, habilidades e conhecimentos nas áreas de desenvolvimento web, ciência de dados, banco de dados e muito mais.
 
+---
+
 ## 🧠 Sobre Mim
 
 Sou Matheus Cirilo, estudante e entusiasta de tecnologia com interesse em áreas como:
@@ -12,6 +14,8 @@ Sou Matheus Cirilo, estudante e entusiasta de tecnologia com interesse em áreas
 - Cloud e DevOps
 - Segurança da Informação
 
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 Este portfólio foi desenvolvido com:
@@ -21,13 +25,17 @@ Este portfólio foi desenvolvido com:
 - JavaScript
 - Imagens e recursos gráficos personalizados
 
-## 📁 Estrutura
+---
 
-├── Projeto/ # Projetos destacados
-├── img/ # Ícones e imagens ilustrativas
-├── style.css # Estilo principal do portfólio
-├── index.html # Página inicial (adicione se necessário)
-└── README.md # Documentação do repositório
+## 📁 Estrutura de Pastas
+
+```bash
+├── Projeto/              # Projetos destacados
+├── img/                  # Ícones e imagens ilustrativas
+├── style.css             # Estilo principal do portfólio
+├── index.html            # Página inicial (adicione se necessário)
+└── README.md             # Documentação do repositório
+```````
 
 ## 📷 Prévia do Portfólio
 
