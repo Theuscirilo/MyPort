@@ -56,7 +56,7 @@ Mais projetos em breve!
 Entre em contato comigo:
 
 - Email: matheuscirilodealmeida@gmail.com
-- LinkedIn: [linkedin.com/in/theuscirilo]([https://www.linkedin.com/in/theusciriol](https://www.linkedin.com/in/matheus-cirilo-de-almeida-979190331/)) *(adicione se tiver)*
+- LinkedIn: [linkedin.com/in/theuscirilo]()) *(https://www.linkedin.com/in/theusciriol](https://www.linkedin.com/in/matheus-cirilo-de-almeida-979190331/)*
 
 ---
 
