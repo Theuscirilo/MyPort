@@ -45,9 +45,9 @@ Você pode acessar o site completo através do GitHub Pages (ative se desejar):
 
 ## 📌 Projetos em Destaque
 
-- **Projeto 1** – [Projeto1.html](Projeto/Projeto1.html)
-- **Projeto 2** – [Projeto2.html](Projeto/Projeto2.html)
-- **Projeto 4** – [Projeto4.html](Projeto/Projeto4.html)
+- **Projeto 1** – [Projeto1.html](https://github.com/Theuscirilo/Sistema_de_Orcamento_de_Gravacao)
+- **Projeto 2** – [Projeto2.html](https://github.com/Theuscirilo/MyDrugs-Site)
+- **Projeto 4** – [Projeto4.html](https://github.com/Theuscirilo/Solicitacao_de_Servicos_Urbanos)
 
 Mais projetos em breve!
 
