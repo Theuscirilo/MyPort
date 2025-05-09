@@ -32,7 +32,10 @@ Este portfólio foi desenvolvido com:
 ```bash
 ├── Projeto/              # Projetos destacados
 ├── img/                  # Ícones e imagens ilustrativas
+<<<<<<< HEAD
 ├── style.css             # Estilo principal do portfólio
+=======
+>>>>>>> 074d29710d9d8fdb21cfe5d26fe03aec62421373
 ├── index.html            # Página inicial (adicione se necessário)
 └── README.md             # Documentação do repositório
 ```````
