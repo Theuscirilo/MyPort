@@ -1,155 +1,573 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projeto 2 - Matheus Cirilo</title>
-  <link rel="stylesheet" href="../style.css" />
-  <style>
-    .project-content {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .project-content p,
-    .project-content h1,
-    .project-content h2,
-    .project-content h3 {
-      text-align: justify;
-    }
-    .project-content ul {
-      text-align: left;
-      padding-left: 20px;
-      margin-bottom: 20px;
-    }
-    .project-content li {
-      margin-bottom: 10px;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto 2 - Sistema de Atendimento Urbano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-  <div id="particles-container" class="particles-container" aria-hidden="true"></div>
-  <div id="mouse-light" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <div class="logo">
-      <img src="../img/LOGOMC.png" alt="Logo MC" class="logo-img" />
-    </div>
-    <div class="theme-toggle">
-      <img src="../img/TEMA.png" alt="Ícone de tema" class="theme-icon" />
-    </div>
-  </header>
-
-  <main class="content-section">
-    <h1 class="section-title appear">Projeto 2</h1>
-
-    <div class="project-content">
-      <img src="../img/PJ04.PNG" alt="Imagem do Projeto 2" style="max-width: 100%; border-radius: 10px; margin-bottom: 30px;" />
-
-      <h1>📣 Sistema de Atendimento Urbano – Prefeitura Municipal de Rosário do Ivaí</h1>
-
-      <p>
-        Este projeto foi desenvolvido com <strong>Streamlit</strong> com o objetivo de facilitar a comunicação entre os cidadãos e a Prefeitura Municipal de Rosário do Ivaí. A plataforma permite que moradores relatem problemas urbanos, façam solicitações de serviço ou enviem sugestões diretamente à equipe administrativa. O sistema é simples, responsivo e totalmente digital, promovendo mais agilidade e transparência no atendimento público.
-      </p>
-
-      <h2>🔧 Funcionalidades Principais:</h2>
-
-      <h3>📝 Formulário de Solicitação Cidadã:</h3>
-      <ul>
-        <li>Envio de pedidos com nome, contato, localidade, endereço e descrição do problema.</li>
-        <li>Opções para tipos de problema: buracos, iluminação, entulho, árvores e outros.</li>
-        <li>Armazenamento em tempo real usando <code>session_state</code>.</li>
-      </ul>
-
-      <h3>🔐 Área Administrativa:</h3>
-      <ul>
-        <li>Acesso restrito por senha para a equipe da Prefeitura.</li>
-        <li>Visualização de pedidos em tabela interativa.</li>
-        <li>Exportação para arquivo CSV.</li>
-        <li>Logout seguro da sessão administrativa.</li>
-      </ul>
-
-      <h3>🧠 Persistência Temporária com <code>st.session_state</code>:</h3>
-      <ul>
-        <li>Gerenciamento dos dados do usuário enquanto a aplicação estiver ativa.</li>
-        <li>Não utiliza banco de dados externo — ideal para protótipos.</li>
-      </ul>
-
-      <h3>🎨 Interface Intuitiva e Acessível:</h3>
-      <ul>
-        <li>Layout amigável com separação entre área pública e área administrativa.</li>
-        <li>Totalmente responsivo, com mensagens claras e intuitivas.</li>
-      </ul>
-
-      <h2>🛠 Tecnologias Utilizadas:</h2>
-      <ul>
-        <li><strong>Linguagem:</strong> Python</li>
-        <li><strong>Framework:</strong> Streamlit</li>
-        <li><strong>Bibliotecas:</strong> pandas, datetime, streamlit</li>
-      </ul>
-
-      <h2>💡 Objetivo:</h2>
-      <p>
-        Digitalizar o canal de atendimento urbano da Prefeitura, oferecendo uma solução prática para que os moradores comuniquem problemas e colaborem com a gestão pública. O sistema reduz burocracias, agiliza a triagem de demandas e fortalece o vínculo entre administração e população.
-      </p>
-
-      <a href="../index.html#projetos" class="cta-button">Voltar para o Portfólio</a>
-      <a href="https://github.com/Theuscirilo/Solicitacao_de_Servicos_Urbanos" class="cta-button" target="_blank">Acessar Projeto</a>
-    </div>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.42.4/tsparticles.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      if (window.tsParticles) {
-        tsParticles.load("particles-container", {
-          particles: {
-            number: { value: 60 },
-            color: { value: "#a950ff" },
-            shape: { type: "circle" },
-            opacity: { value: 0.5 },
-            size: { value: 3, random: true },
-            line_linked: {
-              enable: true,
-              distance: 150,
-              color: "#a950ff",
-              opacity: 0.4,
-              width: 1
-            },
-            move: {
-              enable: true,
-              speed: 1.5,
-              direction: "none",
-              out_mode: "out"
-            }
-          },
-          interactivity: {
-            detect_on: "window",
-            events: {
-              onhover: { enable: true, mode: "repulse" },
-              onclick: { enable: true, mode: "push" }
-            },
-            modes: {
-              repulse: { distance: 100 },
-              push: { particles_nb: 4 }
-            }
-          },
-          retina_detect: true
-        });
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #0f0e17;
+        color: #fffffe;
+        overflow-x: hidden;
       }
 
-      const mouseLight = document.getElementById('mouse-light');
-      if (!window.matchMedia("(pointer: coarse)").matches) {
-        document.body.style.cursor = 'none';
-        document.addEventListener('mousemove', e => {
-          mouseLight.style.left = `${e.clientX}px`;
-          mouseLight.style.top = `${e.clientY}px`;
-        });
-      } else {
-        mouseLight.style.display = 'none';
+      .particles-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
       }
-    });
-  </script>
-</body>
+
+      #mouse-light {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: purple;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        transition: background-color 0.2s ease, opacity 0.2s ease;
+      }
+
+      #mouse-light.shadow {
+        background-color: black;
+        opacity: 0.5;
+      }
+
+      .logo-img {
+        height: 40px;
+        transition: all 0.3s ease;
+      }
+
+      .logo-img:hover {
+        transform: scale(1.1);
+      }
+
+      .theme-icon {
+        height: 24px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .theme-icon:hover {
+        transform: rotate(30deg);
+      }
+
+      .project-content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .project-image {
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        margin-bottom: 40px;
+      }
+
+      .project-image:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      .tech-badge {
+        display: inline-block;
+        background-color: #6246ea;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+
+      .feature-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+        border-left: 4px solid #6246ea;
+      }
+
+      .feature-card:hover {
+        background: rgba(255, 255, 255, 0.08);
+        transform: translateX(5px);
+      }
+
+      .button-group {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        min-width: 200px;
+      }
+
+      .primary-btn {
+        background-color: #6246ea;
+        color: white;
+      }
+
+      .primary-btn:hover {
+        background-color: #7b5dfa;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(98, 70, 234, 0.3);
+      }
+
+      .secondary-btn {
+        background-color: transparent;
+        color: #6246ea;
+        border: 2px solid #6246ea;
+      }
+
+      .secondary-btn:hover {
+        background-color: rgba(98, 70, 234, 0.1);
+        transform: translateY(-3px);
+      }
+
+      .appear {
+        animation: appear 0.8s ease-out forwards;
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;
+        background: linear-gradient(90deg, #6246ea, #a950ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #fffffe;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #b8c1ec;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        color: #b8c1ec;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        color: #a7a9be;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 25px;
+      }
+
+      li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 12px;
+        line-height: 1.6;
+        color: #a7a9be;
+      }
+
+      li:before {
+        content: "•";
+        color: #6246ea;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 0;
+        top: -5px;
+      }
+
+      code {
+        background-color: rgba(98, 70, 234, 0.2);
+        color: #6246ea;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: "Courier New", monospace;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        .section-title {
+          font-size: 2rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        .button-group {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .cta-button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="particles-container"
+      class="particles-container"
+      aria-hidden="true"
+    ></div>
+    <div id="mouse-light" aria-hidden="true"></div>
+
+    <header
+      class="site-header py-6 px-6 md:px-12 flex justify-between items-center"
+    >
+      <div class="logo">
+        <img src="../img/LOGOMC.png" alt="Logo MC" class="logo-img" />
+      </div>
+      <div class="theme-toggle">
+        <i class="fas fa-moon theme-icon text-white"></i>
+      </div>
+    </header>
+
+    <main class="content-section py-12 px-6">
+      <h1 class="section-title appear">Sistema de Atendimento Urbano</h1>
+
+      <div class="project-content">
+        <img
+          src="../img/PJ04.PNG"
+          alt="Imagem do Projeto 2"
+          class="project-image w-full"
+        />
+
+        <div class="flex items-center mb-8">
+          <div
+            class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center mr-4"
+          >
+            <i class="fas fa-city text-white text-xl"></i>
+          </div>
+          <h1>Sistema de Atendimento Urbano</h1>
+        </div>
+
+        <p>
+          <strong
+            >Sistema de Atendimento Urbano – Prefeitura Municipal de Rosário do
+            Ivaí</strong
+          >
+          é um projeto desenvolvido com <strong>Streamlit</strong> com o
+          objetivo de facilitar a comunicação entre os cidadãos e a Prefeitura
+          Municipal de Rosário do Ivaí. A plataforma permite que moradores
+          relatem problemas urbanos, façam solicitações de serviço ou enviem
+          sugestões diretamente à equipe administrativa. O sistema é simples,
+          responsivo e totalmente digital, promovendo mais agilidade e
+          transparência no atendimento público.
+        </p>
+
+        <div class="my-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="feature-card">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-list-alt text-white text-sm"></i>
+                </div>
+                <h3>Formulário de Solicitação Cidadã</h3>
+              </div>
+              <ul>
+                <li>
+                  Envio de pedidos com nome, contato, localidade, endereço e
+                  descrição do problema.
+                </li>
+                <li>
+                  Opções para tipos de problema: buracos, iluminação, entulho,
+                  árvores e outros.
+                </li>
+                <li>
+                  Armazenamento em tempo real usando <code>session_state</code>.
+                </li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-lock text-white text-sm"></i>
+                </div>
+                <h3>Área Administrativa</h3>
+              </div>
+              <ul>
+                <li>Acesso restrito por senha para a equipe da Prefeitura.</li>
+                <li>Visualização de pedidos em tabela interativa.</li>
+                <li>Exportação para arquivo CSV.</li>
+                <li>Logout seguro da sessão administrativa.</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-memory text-white text-sm"></i>
+                </div>
+                <h3>Persistência Temporária</h3>
+              </div>
+              <ul>
+                <li>
+                  Gerenciamento dos dados do usuário enquanto a aplicação
+                  estiver ativa.
+                </li>
+                <li>
+                  Não utiliza banco de dados externo — ideal para protótipos.
+                </li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-palette text-white text-sm"></i>
+                </div>
+                <h3>Interface Intuitiva</h3>
+              </div>
+              <ul>
+                <li>
+                  Layout amigável com separação entre área pública e área
+                  administrativa.
+                </li>
+                <li>
+                  Totalmente responsivo, com mensagens claras e intuitivas.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2>Tecnologias Utilizadas</h2>
+        <div class="mb-8">
+          <span class="tech-badge"
+            ><i class="fab fa-python mr-2"></i>Python</span
+          >
+          <span class="tech-badge"
+            ><i class="fas fa-code mr-2"></i>Streamlit</span
+          >
+          <span class="tech-badge"
+            ><i class="fas fa-table mr-2"></i>Pandas</span
+          >
+        </div>
+
+        <h2>Objetivo</h2>
+        <p>
+          Digitalizar o canal de atendimento urbano da Prefeitura, oferecendo
+          uma solução prática para que os moradores comuniquem problemas e
+          colaborem com a gestão pública. O sistema reduz burocracias, agiliza a
+          triagem de demandas e fortalece o vínculo entre administração e
+          população.
+        </p>
+
+        <div class="button-group">
+          <a href="../index.html#projetos" class="cta-button secondary-btn">
+            <i class="fas fa-arrow-left mr-2"></i> Voltar para o Portfólio
+          </a>
+          <a
+            href="https://github.com/Theuscirilo/Solicitacao_de_Servicos_Urbanos"
+            class="cta-button primary-btn"
+            target="_blank"
+          >
+            <i class="fab fa-github mr-2"></i> Acessar Projeto
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.42.4/tsparticles.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Theme toggle functionality
+        const themeToggle = document.querySelector(".theme-toggle");
+        const themeIcon = document.querySelector(".theme-icon");
+        let darkMode = true;
+
+        themeToggle.addEventListener("click", () => {
+          darkMode = !darkMode;
+          if (darkMode) {
+            document.body.classList.add("dark");
+            themeIcon.classList.remove("fa-sun");
+            themeIcon.classList.add("fa-moon");
+            document.body.style.backgroundColor = "#0f0e17";
+            document.body.style.color = "#fffffe";
+          } else {
+            document.body.classList.remove("dark");
+            themeIcon.classList.remove("fa-moon");
+            themeIcon.classList.add("fa-sun");
+            document.body.style.backgroundColor = "#fffffe";
+            document.body.style.color = "#2e2f3e";
+          }
+        });
+
+        // Particles.js configuration
+        if (window.tsParticles) {
+          tsParticles.load("particles-container", {
+            particles: {
+              number: { value: 60 },
+              color: { value: "#a950ff" },
+              shape: { type: "circle" },
+              opacity: { value: 0.5 },
+              size: { value: 3, random: true },
+              line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#a950ff",
+                opacity: 0.4,
+                width: 1,
+              },
+              move: {
+                enable: true,
+                speed: 1.5,
+                direction: "none",
+                out_mode: "out",
+              },
+            },
+            interactivity: {
+              detect_on: "window",
+              events: {
+                onhover: { enable: true, mode: "repulse" },
+                onclick: { enable: true, mode: "push" },
+              },
+              modes: {
+                repulse: { distance: 100 },
+                push: { particles_nb: 4 },
+              },
+            },
+            retina_detect: true,
+          });
+        }
+
+        // Mouse light effect
+        const mouseLight = document.getElementById("mouse-light");
+        if (mouseLight) {
+          const isTouch = window.matchMedia("(pointer: coarse)").matches;
+          if (isTouch) {
+            mouseLight.style.display = "none";
+          } else {
+            document.body.style.cursor = "none";
+
+            let targetX = 0,
+              targetY = 0;
+            let currentX = 0,
+              currentY = 0;
+
+            document.addEventListener("mousemove", (e) => {
+              targetX = e.clientX;
+              targetY = e.clientY;
+            });
+
+            function animateMouseLight() {
+              // Suavidade ajustada: quase colada ao mouse, mas fluida
+              currentX += (targetX - currentX) * 0.3;
+              currentY += (targetY - currentY) * 0.3;
+              mouseLight.style.left = `${currentX}px`;
+              mouseLight.style.top = `${currentY}px`;
+              requestAnimationFrame(animateMouseLight);
+            }
+            animateMouseLight();
+
+            // Sombra ao passar sobre botões
+            document
+              .querySelectorAll("button, a, .project-card")
+              .forEach((el) => {
+                el.addEventListener("mouseenter", () => {
+                  mouseLight.classList.add("shadow");
+                });
+                el.addEventListener("mouseleave", () => {
+                  mouseLight.classList.remove("shadow");
+                });
+              });
+          }
+        }
+
+        // Animation for elements on scroll
+        const animateOnScroll = () => {
+          const elements = document.querySelectorAll(
+            ".feature-card, .tech-badge, p, h1, h2, h3, ul"
+          );
+
+          elements.forEach((element) => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if (elementPosition < screenPosition) {
+              element.style.opacity = "1";
+              element.style.transform = "translateY(0)";
+            }
+          });
+        };
+
+        // Set initial state for animation
+        document
+          .querySelectorAll(".feature-card, .tech-badge, p, h1, h2, h3, ul")
+          .forEach((el) => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(20px)";
+            el.style.transition = "all 0.6s ease-out";
+          });
+
+        window.addEventListener("scroll", animateOnScroll);
+        animateOnScroll(); // Run once on load
+      });
+    </script>
+  </body>
 </html>
